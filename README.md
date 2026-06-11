@@ -1,6 +1,6 @@
 # Crest
 
-Crest is a compact multi-vector retrieval model for document pages. This repository contains the core model implementation only. We will release the full training, evaluation, and experiment code after paper acceptance.
+Crest is a compact multi-vector retrieval model for multimodal document. This repository contains the core model implementation only. We will release the full training, evaluation, and experiment code after paper acceptance.
 
 ## Contents
 
