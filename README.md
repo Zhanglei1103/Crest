@@ -45,7 +45,7 @@ Optional page-side features can improve token routing:
 
 Queries are represented as multi-vector embeddings with shape `Tensor[num_query_tokens, dim]`.
 
-## Minimal Usage
+## Usage
 
 ```python
 import torch
@@ -72,6 +72,4 @@ result = retriever.search(
 
 For real use, load trained Crest checkpoints with `load_crest(...)`; randomly initialized modules are useful only for interface tests.
 
-## Method Summary
 
-The compact router predicts page-side token importance and keeps a fixed token budget for corpus-wide retrieval. Residual repair selects a small set of dropped tokens and applies them only to compact top candidates. Stability-aware composition controls whether residual-repaired candidate scores should replace compact scores.
