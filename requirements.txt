@@ -1,6 +1,4 @@
-# Tested environment for the Crest core model release.
-# Our local runs use Python 3.13 and CUDA 13.0 wheels; install the matching
-# PyTorch build for your CUDA/driver stack if these wheels are unavailable.
+
 
 # Core tensor/model stack
 torch==2.11.0
