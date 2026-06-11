@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+outputs/
+runs/
+*.pt
+*.pth
+*.safetensors
+data/*.pt
+data/*.pth
+data/*.json
+data/*.jsonl
