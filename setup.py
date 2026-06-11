@@ -7,8 +7,6 @@ setup(
     packages=find_packages(),
     python_requires=">=3.10",
     install_requires=[
-        "torch",
-        "numpy",
-        "pyyaml",
+        "torch>=2.1.0",
     ],
 )

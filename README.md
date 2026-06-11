@@ -21,6 +21,16 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
+## Dependencies
+
+The public model code intentionally has a small dependency surface:
+
+- Python >= 3.10
+- PyTorch >= 2.1
+- setuptools and wheel for editable installation
+
+Backbone encoders, dataset loaders, training pipelines, and experiment tooling are not included in this model-only release. This repository expects precomputed multi-vector embeddings as input, so encoder-specific packages such as visual-language model runtimes should be installed separately by downstream users if needed.
+
 ## Expected Inputs
 
 Crest operates on precomputed multi-vector embeddings from a frozen visual retriever. A page record should contain:
