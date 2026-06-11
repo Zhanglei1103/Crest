@@ -1,6 +1,34 @@
-# Core runtime dependency for the public Crest model code.
-torch>=2.1.0
+# Tested environment for the Crest core model release.
+# Our local runs use Python 3.13 and CUDA 13.0 wheels; install the matching
+# PyTorch build for your CUDA/driver stack if these wheels are unavailable.
 
-# Packaging tools used by `pip install -e .`.
+# Core tensor/model stack
+torch==2.11.0
+torchvision==0.26.0
+numpy==2.4.2
+
+# ColPali / ColQwen visual multi-vector backbones
+colpali_engine==0.3.15
+transformers==5.9.0
+accelerate==1.13.0
+peft==0.18.1
+huggingface_hub==1.6.0
+safetensors==0.7.0
+tokenizers==0.22.2
+sentencepiece==0.2.1
+protobuf==6.33.5
+qwen-vl-utils==0.0.14
+Pillow==12.1.0
+
+# Training / evaluation utilities used in our runs
+PyYAML==6.0.2
+tqdm==4.67.1
+datasets==4.8.4
+pyarrow==23.0.1
+pandas==3.0.0
+scikit-learn==1.8.0
+scipy==1.17.0
+
+# Packaging
 setuptools>=68
 wheel>=0.41

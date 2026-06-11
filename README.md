@@ -1,7 +1,6 @@
 # Crest
 
-Crest is a compact multi-vector retrieval model for document pages. 
-
+Crest is a compact multi-vector retrieval model for document pages. This repository contains the core model implementation only. We will release the full training, evaluation, and experiment code after paper acceptance.
 
 ## Contents
 
@@ -21,15 +20,7 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
-## Dependencies
-
-The public model code intentionally has a small dependency surface:
-
-- Python >= 3.10
-- PyTorch >= 2.1
-- setuptools and wheel for editable installation
-
-Backbone encoders, dataset loaders, training pipelines, and experiment tooling are not included in this model-only release. This repository expects precomputed multi-vector embeddings as input, so encoder-specific packages such as visual-language model runtimes should be installed separately by downstream users if needed.
+The requirements file records the environment used for our ColPali/ColQwen-based runs, including the backbone and training utilities. The current repository exposes only the model-side modules.
 
 ## Expected Inputs
 
@@ -79,6 +70,5 @@ result = retriever.search(
     retention=0.75,
 )
 ```
-
 
 
