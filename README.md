@@ -1,7 +1,7 @@
 # Crest
 
 Crest is a compact multi-vector retrieval model for document pages. 
-The release is intentionally minimal. It does not include datasets, trained checkpoints, experiment scripts, logs, or paper table generation code.
+
 
 ## Contents
 
