@@ -70,6 +70,5 @@ result = retriever.search(
 )
 ```
 
-For real use, load trained Crest checkpoints with `load_crest(...)`; randomly initialized modules are useful only for interface tests.
 
 
